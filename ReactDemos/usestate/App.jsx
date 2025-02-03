@@ -21,7 +21,7 @@ function InteractiveForm() {
     event.preventDefault();
     console.log("Form submitted:", formData);
     // Here you would typically send the form data to a server
-    // ... your submission logic ...
+  
 
     // Optionally reset the form after submission:
     setFormData({

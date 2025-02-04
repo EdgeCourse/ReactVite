@@ -1,0 +1,156 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Basic Navigation Styles */
+nav {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange list items horizontally */
+  justify-content: center; /* Center the links */
+}
+
+nav li {
+  margin: 0 15px; /* Add spacing between list items */
+}
+
+nav a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #333; /* Dark gray text color */
+  font-weight: bold;
+  padding: 5px 10px; /* Add some padding around the links */
+  border-radius: 5px; /* Rounded corners for the links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Slightly darker background on hover */
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Active Link Styling (Optional) */
+nav a.active { /*  You'll need to add the 'active' class dynamically with React Router */
+  background-color: #007bff; /* Blue background for the active link */
+  color: #fff; /* White text color for the active link */
+}
+
+
+/* Responsive Navigation (Example) */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  nav ul {
+    flex-direction: column; /* Stack list items vertically on smaller screens */
+    align-items: center; /* Center the links horizontally */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+}
+
+
+/* More Advanced Styling (Optional) */
+
+/* Example with a border and shadow */
+nav {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Example with a different color scheme */
+nav {
+  background-color: #333; /* Dark background */
+}
+
+nav a {
+  color: #eee; /* Light text color */
+}
+
+nav a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #00aaff; /* A different active color */
+  color: #fff;
+}
+
+/* Example with a logo */
+.logo {
+  max-height: 40px; /* Adjust as needed */
+  vertical-align: middle; /* Align logo with the links */
+  margin-right: 10px;
+}
+
+nav ul {
+    align-items: center; /* Vertically center the logo and links */
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

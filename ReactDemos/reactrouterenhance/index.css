@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+button {
+  padding: 8px 16px; /* Slightly larger padding */
+  margin: 5px; /* Space around buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle blue shadow on focus */
+}
+
+/* Different button styles (optional) */
+.secondary-button {
+  background-color: #6c757d; /* Gray background */
+}
+
+.secondary-button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+.filter-button { /* Example style for filter buttons */
+    background-color: #f0ad4e; /* Example: Orange for filters */
+}
+
+.filter-button:hover {
+    background-color: #e3931e; /* Darker orange on hover */
+}
+
+.sort-button { /* Example style for sort buttons */
+    background-color: #5cb85c; /* Example: Green for sort */
+}
+
+.sort-button:hover {
+    background-color: #449d44; /* Darker green on hover */
+}
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #333;
+}
+
+.container { /* Added a container for styling */
+  padding: 20px;
+}
